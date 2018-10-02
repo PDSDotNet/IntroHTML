@@ -1,0 +1,113 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Primer pagina web</title>
+        <meta name="descripcion" content="Primer pagina WEB del minicurso de microsoft">
+        <meta name="author" content="PDS">
+        <meta charset="UTF-8">
+
+        <!--Estilos con CSS-->
+        <style>
+            body{ 
+                background: rgb(103, 103, 219);
+                text-align: center;
+                font-display: lucida;
+
+            }
+
+            div{
+                background: rgb(52, 72, 92);
+                width: 500px;
+                border-radius: 10px;
+                margin: auto;
+                margin-top: 3px;
+                box-sizing: border-box;
+                
+                padding: 10px; 
+                text-align: center; 
+            }
+
+            p{
+                font-size: 18px;
+                color: rgb(6, 80, 85);
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            h1{
+                margin-top: 0;
+            }
+
+            .contenedor-muestra{
+                display:inline-block;
+                width:300px;
+                
+            }
+            .contenedor-datos{
+                display:inline-block;
+                width:300px;
+            }
+            .contenedor-grande{
+                display:block;
+                width:600px;
+                background: rgb(95, 170, 240);
+            }
+
+            .fondo-gris{
+                background: rgb(119, 117, 117);
+            }
+
+            #titulo-unico{
+                color: rgb(80, 23, 133);
+            }
+
+            #alineacion-superior{
+                text-align:unset; 
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--Comentario-->
+        <div class="contenedor-grande">
+                
+                <p id="titulo-unico">A long time ago in a little house....</p>
+                <P id="titulo-unico">Maximo said.</P>
+                <img src="./DiaDelPadre.jpg" alt="Imagen tierna">
+                <h1>El mejor día del año</h1>
+                <a href="Otra.html">Lista de compras</a>
+        </div>
+
+        <div class="contenedor-muestra">
+                <h1>Titulo 1</h1>
+                <h2>Titulo 2</h2>
+                <h3>Titulo 3</h3>
+                <h4>Titulo 4</h4>
+                <h5>Titulo 5</h5>
+                <h6>Titulo 6</h6>
+        </div>
+
+        <div class="contenedor-muestra fondo-gris alineacion-superior">
+                <!--
+                <h1>Titulo 1</h1>
+                <h2>Titulo 2</h2>
+                <h3>Titulo 3</h3>
+                <h4>Titulo 4</h4>
+                <h5>Titulo 5</h5>
+                <h6>Titulo 6</h6> 
+                -->
+               
+                <!--
+                -->
+                <h3>Informacion de usuario</h3>
+                <input type="text" onchange="usuario=this.value" placeholder="Usuario"/>
+                <input type="password" onchange="clave=this.value" placeholder="*******"/>
+                <input type="date"/>
+                <input type="color"/>
+                <button onclick="alert( usuario + clave)"> Enviar contenido</button>
+
+        </div>
+
+    </body>
+</html>
